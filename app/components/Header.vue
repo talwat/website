@@ -31,7 +31,10 @@ onMounted(() => {
 <template>
   <header>
     <nav>
-      <p id="name">talwat</p>
+      <div id="left">
+        <ThemeSwitcher />
+        <p id="name">talwat</p>
+      </div>
       <div id="pages">
         <NuxtLink v-for="page in pages" :to="page.link">{{
           page.name
@@ -40,7 +43,7 @@ onMounted(() => {
       <button id="menu-btn" @click="menu = !menu">
         <Icon name="mdi:hamburger-menu" size="2rem" />
       </button>
-      <div id="socials">
+      <div id="right">
         <a
           class="icon"
           v-for="social in socials"
@@ -88,6 +91,7 @@ nav > * {
   flex-basis: 0;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -163,7 +167,7 @@ a {
   }
 }
 
-#socials {
+#right {
   justify-content: end;
 }
 </style>

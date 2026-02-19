@@ -3,7 +3,12 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   css: ["~/assets/main.css"],
-  modules: ["@nuxt/fonts", "@nuxt/icon", "@nuxtjs/sitemap"],
+  modules: [
+    "@nuxt/fonts",
+    "@nuxt/icon",
+    "@nuxtjs/sitemap",
+    "@nuxtjs/color-mode",
+  ],
   fonts: {
     defaults: {
       weights: [400],
@@ -18,5 +23,6 @@ export default defineNuxtConfig({
   },
   sitemap: {
     xsl: false,
+    zeroRuntime: true,
   },
 });

@@ -3,7 +3,10 @@ import { join } from "path";
 
 const ORDER = [
   "barcelona",
+  "tel-aviv",
+  "mitzpe-ramon",
   "andorra",
+  "freiburg",
   "cadi",
   "vallter-2000",
   "port-del-comte",
